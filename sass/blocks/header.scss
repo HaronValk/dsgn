@@ -1,0 +1,28 @@
+.page-header{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+}
+.page-header__left{
+    grid-column: span 11;
+    padding-left: 15.94%;
+    padding-top: 4.83%;
+    padding-bottom: 8.69%;
+    background-image: url('/img/image1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.page-header__right{
+    grid-column: span 5;
+}
+.page-header__logo{
+    display: block;
+    margin: 0;
+}
+.page-header__slogan{
+    font-size: 18px;
+    font-family: "RobotoCondensed";
+    color: rgb(57, 61, 60);
+    text-transform: uppercase;
+    line-height: 1;
+}
