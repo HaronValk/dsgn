@@ -1,0 +1,40 @@
+$iconsColor: #7bcbc1;
+
+.socials{
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    list-style: none;
+}
+.socials__item:not(:last-child){
+    margin: 0 6px;
+}
+.socials__link{
+    text-decoration: none;
+    display: block;
+    &:hover{
+        .socials__icon{
+            fill: $activeColor;
+        }
+    }
+}
+.socials__icon{
+    fill: $iconsColor;
+    transition: all 0.3s;
+}
+.socials__icon--facebook{
+    width: 10px;
+    height: 22px;
+}
+.socials__icon--twitter{
+    width: 26px;
+    height: 21px;
+}
+.socials__icon--linkedin{
+    width: 24px;
+    height: 23px;
+}
+.socials__icon--google{
+    width: 19px;
+    height: 19px;
+}

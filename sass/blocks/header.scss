@@ -1,3 +1,5 @@
+$bgRightColor: #7bcbc1;
+
 .page-header{
     display: grid;
     grid-template-columns: repeat(16, 1fr);
@@ -22,7 +24,61 @@
 .page-header__slogan{
     font-size: 18px;
     font-family: "RobotoCondensed";
-    color: rgb(57, 61, 60);
+    color: $colorText;
     text-transform: uppercase;
     line-height: 1;
+    margin: 0;
+    margin-top: 5px;
+}
+.page-header__social-list{
+    margin-top: 60px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.page-header__right{
+    background-color: $bgRightColor;
+    position: relative;
+    padding-top: 10.75%;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><line x1="0" y1="100%" x2="100%" y2="0" stroke="rgb(255, 255, 255)" stroke-width="1px"></line></svg>');
+    }
+}
+.page-header__adress{
+    margin: 0;
+    font-size: 13px;
+    font-family: "RobotoCondensed";
+    color: $white;
+    text-transform: uppercase;
+    line-height: 1.077;
+    position: absolute;
+    left: 13%;
+    bottom: 36.5%;
+
+}
+.page-header__contacts{
+    font-size: 13px;
+    font-family: "RobotoCondensed";
+    color: $white;
+    text-transform: uppercase;
+    line-height: 1.077;
+    position: absolute;
+    left: 29%;
+    bottom: 20%;
+}
+.page-header__phone, .page-header__mail{
+    color: $white;
+    display: block;
+    text-decoration: none;
+    transition: color 0.3s;
+    &:hover{
+        color: $activeColor;
+    }
 }
