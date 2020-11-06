@@ -1,5 +1,4 @@
 const jsFiles = [
-  $.path.jquery,
   $.path.js,
 ];
 

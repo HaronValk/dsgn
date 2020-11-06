@@ -9,14 +9,29 @@ $bgRightColor: #7bcbc1;
     padding-left: 15.94%;
     padding-top: 4.83%;
     padding-bottom: 8.69%;
-    background-image: url('/img/image1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+}
+.no-webp .page-header__left{
+    background-image: url('/img/image1.png');
     @media (min-resolution: 2dppx), (min-width:1500px) {
         background-image: url('/img/image1-2x.png');
     }
 }
+.no-js .page-header__left{
+    background-image: url('/img/image1.png');
+    @media (min-resolution: 2dppx), (min-width:1500px) {
+        background-image: url('/img/image1-2x.png');
+    }
+}
+.webp .page-header__left{
+    background-image: url('/img/image1.webp');
+    @media (min-resolution: 2dppx), (min-width:1500px) {
+        background-image: url('/img/image1-2x.webp');
+    }
+}
+
 .page-header__right{
     grid-column: span 5;
     padding-bottom: 21.5%;
