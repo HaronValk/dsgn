@@ -19,6 +19,7 @@ $bgRightColor: #7bcbc1;
 }
 .page-header__right{
     grid-column: span 5;
+    padding-bottom: 21.5%;
 }
 .page-header__logo{
     display: block;
@@ -72,14 +73,15 @@ $bgRightColor: #7bcbc1;
     }
 }
 .page-header__contacts{
+    margin: 0;
     font-size: 13px;
     font-family: "RobotoCondensed";
     color: $white;
     text-transform: uppercase;
     line-height: 1.077;
     position: absolute;
-    left: 29%;
-    bottom: 20%;
+    left: 46%;
+    bottom: 21.5%;
     @media (min-width:1500px) {
         @include dynamicText(81.25%, 26, 13, 1500px, 3000, 1500)
     }
