@@ -20,4 +20,7 @@
     color: $red;
     text-transform: uppercase;
     line-height: 1.091;
+    @media (min-width:1500px) {
+        @include dynamicText(68%, 22, 11, 1500px, 3000, 1500)
+    }
 }
