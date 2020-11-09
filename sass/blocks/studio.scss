@@ -1,7 +1,6 @@
 $studioColor:#ff9b6d;
 $orange: #fd5000;
 .studio{
-   
     display: grid;
     grid-template-columns: repeat(16, 1fr);
 }
@@ -220,7 +219,7 @@ $orange: #fd5000;
         grid-column: span 16;
     }
     .studio__persons-list{
-        padding: 3% 6% 0 12.9%;
+        padding: 3% 6% 7% 12.9%;
     }
 }
 @media(max-width:768px){
